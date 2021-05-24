@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Federica Maio">
+    <meta name="description" content="Federica Front-end Developer. Realizzo siti web responsive e mobile-friendly.">
+    <meta name="keywords" content="Sito web, Html, Css, Javascript, front-end, developer, sviluppatore web, seo, responsive, e-commerce.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- libreria font awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <title>Federica Maio - Front-end Developer</title>
+  </head>
+  <body>
+    <div class="page">
+
+      <header>
+         <div class="logo-wrapper">
+            <a class="logo-link" href="index.html">FM</a>
+         </div>
+
+         <nav class="nav-header">
+            <input id="hamburger-menu" type="checkbox" name="checkbox" value=""> <!-- creo l'hamburger menu tramite checkbox così poi lo posso rendere cliccabile -->
+            <label for="hamburger-menu">
+               <i class="fas fa-bars" id="hamburger-icon"></i> <!-- menu icons -->
+               <i class="fas fa-times" id="close-icon"></i>
+            </label>
+
+            <ul class="menu">
+               <li class="menu-item"><a href="index.html">HOME</a></li>
+               <li class="menu-item"><a href="chi-sono.html">CHI SONO</a></li>
+               <li class="menu-item"><a href="#portfolio-title">PORTFOLIO</a></li>
+               <li class="menu-item"><a href="#contacts-section">CONTATTI</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- contenitore immagine + testo -->
+      <div class="container-banner">
+
+         <div class="banner">
+            <div class="banner-caption"> <!--caption-->
+               <h1 class="banner-title">FEDERICA MAIO</h1>
+               <h2 class="banner-subtitle">Front-end Developer</h2>
+               <p class="banner-text">con un occhio attento al Web Design.</p> <!-- oppure con la passione del web design -->
+            </div>
+
+            <a class="button-contacts" href="#contacts-section">CONTATTAMI</a>
+          <!-- uso un div vuoto per applicare la trasparenza all'immagine -->
+            <div class="transparency"></div>
+         </div>
+
+      </div> <!-- fine container-banner -->
+
+
+      <div class="content-container">
+
+           <!-- caption  -->
+          <div class="caption">
+             <h1>Enjoy a user-friendly experience </h1>
+             <h2>Easy navigation with a customized design</h2>
+          </div>
+
+           <!-- portfolio -->
+          <div class="portfolio">
+             <div id="portfolio-title">
+                <h3>Dai un'occhiata al mio</h3>
+                <h1> PORTFOLIO</h1>
+             </div>
+
+             <div class="portfolio-item first-item">
+                <div class="portfolio-transparency">
+                  <div class="portfolio-content">
+                     <i class="fab fa-html5"></i>
+                     <i class="fab fa-css3-alt"></i>
+                     <i class="fab fa-js-square"></i>
+                     <h4>HTML &nbsp; CSS &nbsp; JAVASCRIPT</h4>
+                  </div>
+                </div>
+             </div>
+             <div class="portfolio-item second-item">
+                <div class="portfolio-transparency">
+                  <div class="portfolio-content">
+                    <!-- <i class="far fa-file-code"></i> -->
+                    <p>Relizzo siti web <span>responsive</span> e <span>mobile-friendly</span>. Mi piace inoltre creare siti che siano 'smart' e che offrano al cliente un'esperienza semplice, veloce e gradevole agli occhi.</p>
+                  </div>
+                </div>
+             </div>
+             <div class="portfolio-item third-item">
+                <div class="portfolio-transparency">
+                  <div class="portfolio-content">
+                    <!-- <i class="fas fa-code"></i> -->
+                    <p>La mia missione è essenzialmente quella di unire ad un'esperienza di navigazione
+                      semplice, coerente e intuitiva, il mio <span>tocco personale</span>, ma sempre tenendo conto delle richieste del <span>cliente</span>.</p>
+                  </div>
+                </div>
+             </div>
+
+          </div> <!-- fine portfolio -->
+
+      </div> <!-- fine content-container -->
+
+
+
+      <!-- footer -->
+      <footer>
+         <div class="footer-transparency">
+            <div id="contacts-section"> <!-- l'id serve per creareun colleg. interno e collegarlo alla voce del nav 'contatti' -->
+               <h2>Hai bisogno di aiuto?</h2>
+               <h1>CONTATTAMI</h1>
+               <div class="contacts">
+                 <i class="fas fa-at"></i>
+                 <a class="my-email" href="mailto:federica.maio93@hotmail.com">federica.maio93@hotmail.com</a> </p>
+                 <i class="fab fa-whatsapp"></i>
+                 <a class="my-number" href="tel:+393456489860">+39 3456489860</a></p>
+               </div>
+            </div>
+
+            <div class="social">
+               <p>Seguimi su</p>
+               <a href="https://www.instagram.com/phederica10/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.facebook.com/federica.maio.37/"><i class="fab fa-facebook-square"></i></a>
+            </div>
+
+            <div class="footer-copyright">
+               <p> <span>&copy;</span> 2021 <span>&ndash;</span> Federica Maio</p>
+            </div>
+
+         </div>
+      </footer>
+
+    </div> <!-- fine page -->
+
+  </body>
+</html>

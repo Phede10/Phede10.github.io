@@ -1,0 +1,465 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  font-family: 'EB Garamond', serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+header {
+  background-color: rgba(17, 17, 17, 0.4);
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 3;  /* uso lo z-index perchè altrimenti il nav starebbe sotto l'immagine */
+  width: 100%;
+}
+
+.logo-wrapper {
+  margin-left: 25.6px;
+}
+
+.logo-link {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.nav-header {
+  width: 450px;
+  margin-right: 25.6px;
+}
+
+#hamburger-icon, #close-icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-item a:hover {
+  background-color: RGBA(208,138,138,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* fine header */
+
+.container-banner {
+  height: 500px;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important; /*dichiarando tutti e 4 i paramentri me lo posiziona lungo tutto il contenitore */
+}
+
+.banner {
+  height: 500px;
+  background-image: url("../images/banner.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: #181818;
+  font-family: 'Markazi Text', serif;
+
+}
+
+.banner-caption {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.banner-title {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.banner-subtitle {
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  font-size: 28px;
+}
+
+.banner-text {
+  font-style: italic;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+.button-contacts {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2; /* altrimenti il button starebbe sotto il div transparency e sarebbe anch'esso trasparente */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-contacts:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.98);
+}
+
+
+.transparency {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* fine container-banner */
+
+.content-container {
+  width: 100%;
+  background-color: #181818;
+  padding-top: 500px;
+  padding-bottom: 200px;
+}
+
+.caption {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+  background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+  line-height: 1.5;
+  border-bottom: 2px solid;
+  word-spacing: 3px;
+}
+
+.caption h2 {
+  margin-top: 15px;
+  margin-bottom: 150px;
+}
+
+.portfolio {
+  width: 80%;
+  margin: auto;
+}
+
+#portfolio-title {
+  width: 200px;
+  margin-top: 100px;
+  background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+}
+
+.portfolio-item {
+  width: 100%;
+  height: 300px;
+  background-color: #E0A175;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.portfolio-item.first-item {
+  background-image: url("../images/banner-cropped-1.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.portfolio-item.second-item {
+  background-image: url("../images/banner-cropped-3.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item.third-item {
+  background-image: url("../images/banner-cropped-2.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-transparency {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-content {
+  width: 90%;
+  height: 90%;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 15px;
+  line-height: 1.5;
+}
+
+.first-item  .portfolio-content{
+  padding-top: 50px;
+}
+
+.portfolio-content span {
+  font-weight: bold;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js-square {
+  font-size: 35px;
+  margin: 30px 10px;
+}
+
+/* fine portfolio */
+
+footer {
+  height: 550px;
+  background-image: url('../images/banner-footer.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.footer-transparency {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+#contacts-section {
+  text-align: center;
+  padding-top: 100px;
+  height: 300px;
+}
+
+#contacts-section h2 {
+  margin-bottom: 15px;
+}
+
+
+.contacts {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.fa-at, .fa-whatsapp {
+  margin-right: 5px;
+  font-weight: 900;
+}
+
+.my-email, .my-number {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+#contacts-section a:hover {  /* da rivedere l'hover */
+  color: #31322f;
+}
+
+.social {
+  text-align: center;
+}
+
+.fa-instagram, .fa-facebook-square {
+ margin: 10px;
+ font-size: 30px;
+ color: black;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-size: 16px;
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width:768px){  /* nascondiamo il menu e visualizziamo l'hamburger menu */
+  label #hamburger-icon {
+    display: block;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #hamburger-menu {
+    visibility: hidden;
+  }
+  .nav-header {
+    width: 45px;
+    height: 45px;
+    margin: 15px 20px;
+  }
+  .nav-header .menu {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    flex-direction: column;
+    background-color: #111111;
+    margin-top: 15px;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  .nav-header .menu li {
+    margin: 10px 0;
+    line-height: 30px;
+    border-bottom-style: solid;
+    padding-bottom: 15px;
+  }
+  .nav-header .menu li:first-child {
+    padding-top: 15px;
+  }
+  .nav-header .menu a {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .nav-header ul {
+    visibility: hidden;
+  }
+  label {
+    position: relative;
+  }
+  .nav-header #hamburger-menu {
+      position: absolute;
+      bottom: 0;
+    }
+  #hamburger-menu:checked ~ ul {
+    visibility: visible;
+    left: 0;
+  }
+  #hamburger-menu:checked ~ label #hamburger-icon {
+    display: none;
+  }
+  #hamburger-menu:checked ~ label #close-icon {
+    display: block;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .portfolio-content {
+    padding: 30px;
+  }
+  .portfolio-item {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hamburger-menu {
+    display: none;
+  }
+  .caption h1 {
+    text-align: left;
+  }
+  .caption h2 {
+    text-align: right;
+  }
+  .portfolio {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-item {
+    width: 400px;
+  }
+  .second-item {
+    align-self: center;
+  }
+  .third-item {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-title {
+    font-size: 60px;
+  }
+  .banner-subtitle {
+    font-size: 32px;
+  }
+  .banner-text {
+    font-size: 24px;
+  }
+  .button-contacts {
+    font-size: 28px;
+  }
+}
