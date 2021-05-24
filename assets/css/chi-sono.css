@@ -182,7 +182,7 @@ footer {
 }
 
 #contacts-section a:hover {  /* da rivedere l'hover */
-  color: #fff;
+  color: #31322f;
 }
 
 .social {
@@ -306,6 +306,6 @@ footer {
   .title {
     display: flex;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
   }
 }
