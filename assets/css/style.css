@@ -173,7 +173,7 @@ header {
     /* -webkit-text-stroke-width: thick;
     -webkit-text-stroke-color: transparent; */
   
-  -webkit-text-fill-color: !transparent; 
+  -webkit-text-fill-color: transparent !important; 
   opacity: 0.8;
   line-height: 1.5;
   border-bottom: 2px solid;
