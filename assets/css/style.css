@@ -170,12 +170,11 @@ header {
   background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent !important;
   
     /* -webkit-text-stroke-width: thick;
-    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-color: transparent; */
   
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: !transparent; 
   opacity: 0.8;
   line-height: 1.5;
   border-bottom: 2px solid;
