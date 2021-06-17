@@ -167,6 +167,19 @@ header {
   margin: auto;
   text-align: center;
   margin-top: 150px;
+  /*
+  background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent !important; 
+  opacity: 0.8;
+  line-height: 1.5;
+  border-bottom: 2px solid;
+  word-spacing: 3px;  */
+}
+
+.caption h2 {
+  margin-top: 15px;
+  margin-bottom: 150px;
   background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
   -webkit-background-clip: text;  
   -webkit-text-fill-color: transparent !important; 
@@ -176,9 +189,14 @@ header {
   word-spacing: 3px;
 }
 
-.caption h2 {
-  margin-top: 15px;
-  margin-bottom: 150px;
+.caption h1  
+  background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent !important; 
+  opacity: 0.8;
+  line-height: 1.5;
+  border-bottom: 2px solid;
+  word-spacing: 3px;
 }
 
 .portfolio {
