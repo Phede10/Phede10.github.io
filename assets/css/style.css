@@ -205,7 +205,6 @@ header {
 
 #portfolio-title h3, #portfolio-title h1 {
   width: 200px;
-  margin-top: 100px;
   color: #fff;
   background-image: linear-gradient(to right, #9b2a84, #ab2c77, #b6346a, #bd3f5f, #c14c55, #c6544f, #ca5d49, #cc6744, #d36f3e, #d87738, #dc8030, #df8a27);
   background-clip: text;
